@@ -1,0 +1,23 @@
+{
+  "name": "excel-app",
+  "version": "1.0.0",
+  "description": "Pure JS App",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Velmatoff/excel-app.git"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Velmatoff <velmatoff@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Velmatoff/excel-app/issues"
+  },
+  "homepage": "https://github.com/Velmatoff/excel-app#readme"
+}
