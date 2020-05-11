@@ -12,7 +12,10 @@
     "linebreak-style": "off",
     "indent": "off",
     "quotes": "off",
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "operator-linebreak": "off",
+    "comma-spacing": "off",
+    "no-unused-vars": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
