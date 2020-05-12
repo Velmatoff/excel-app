@@ -1,8 +1,8 @@
 class Dom {
     constructor(selector) {
-       this.$el = typeof selector === 'string'
-        ? document.querySelector(selector)
-           : selector
+        this.$el = typeof selector === 'string'
+            ? document.querySelector(selector)
+            : selector
     }
 
     html(html) {
@@ -12,17 +12,18 @@ class Dom {
         }
         return this.$el.outerHTML.trim()
     }
+
     clear() {
-      this.html('')
-      return this
+        this.html('')
+        return this
     }
 
     on(eventType, callback) {
-        this.$el.addEventListener(eventType,callback)
+        this.$el.addEventListener(eventType, callback)
     }
 
     off(eventType, callback) {
-        this.$el.removeEventListener(eventType,callback)
+        this.$el.removeEventListener(eventType, callback)
     }
 
     append(node) {
@@ -37,8 +38,27 @@ class Dom {
         }
         return this
     }
-}
 
+    get data() {
+        return this.$el.dataset
+    }
+
+    closest(selector) {
+        return $(this.$el.closest(selector))
+    }
+
+    getCords() {
+        return this.$el.getBoundingClientRect()
+    }
+
+    findAll(selector) {
+        return this.$el.querySelectorAll(selector)
+    }
+
+    css(styles = {}) {
+        Object.keys(styles).forEach(key => this.$el.style[key] = styles[key])
+    }
+}
 
 // event.target
 export function $(selector) {
